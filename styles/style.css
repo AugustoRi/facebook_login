@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+/*classes auxiliares*/
+
+.clear {
+  clear: both;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.w50 {
+  width: 50%;
+  padding: 0 10px;
+  float: left;
+}
+
+.reset {
+  padding: 0;
+}
+
+.w100 {
+  width: 100%;
+  float: left;
+}
+
+/*estilizacao principal*/
+
+header {
+  background-color: #1e90ff;
+  padding: 8px 0;
+}
+
+.logo {
+  float: left;
+  margin-top: 4px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo h2 {
+  font-size: 23px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+form.form-login {
+  float: right;
+}
+
+.form-element {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.form-element p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-element input[type="email"],
+.form-element input[type="password"] {
+  margin-top: 4px;
+  outline: 0;
+  padding-left: 5px;
+  height: 22px;
+}
+
+.form-element input[type="submit"] {
+  cursor: pointer;
+  background-color: #1677d6;
+  border: 2px solid #1165b7;
+  color: #fff;
+  padding: 3px 5px;
+}
+
+.form-element input[type="submit"]:hover {
+  background-color: #1465b5;
+}
+
+main {
+  background: linear-gradient(white, #d3d8e8);
+  padding: 20px 0;
+}
+
+.img-cadastro {
+  float: left;
+  width: 50%;
+}
+
+.img-cadastro p {
+  max-width: 90%;
+  margin-bottom: 5px;
+  padding: 0 7%;
+  font-weight: bold;
+}
+
+.img-cadastro img {
+  max-width: 100%;
+}
+
+.abrir-conta {
+  margin-left: 5%;
+  width: 40%;
+  float: left;
+}
+
+.abrir-conta h2 {
+  color: #000;
+  font-size: 35px;
+}
+
+.abrir-conta h3 {
+  color: rgb(30, 30, 30);
+  font-size: 19px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+form.criar-conta {
+  margin-top: 10px;
+}
+
+form.criar-conta input {
+  padding: 10px 10px;
+  margin: 10px 0;
+  width: 100%;
+  outline: 0;
+}
+
+form.criar-conta input[type="text"],
+form.criar-conta input[type="email"],
+form.criar-conta input[type="password"] {
+  padding-left: 5px;
+  font-size: 20px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
+form.criar-conta input[type="submit"] {
+  height: 40px;
+  background: linear-gradient(#67ee65, #578843);
+  color: white;
+  border: 0;
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+form .w100 h2 {
+  color: #1d2129;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+form select.nascimento {
+  float: left;
+  margin-top: 10px;
+  padding-right: 10px;
+  margin-right: 5px;
+  outline: 0;
+  height: 30px;
+}
+
+.input-radio {
+  margin: 3px 10px;
+  float: left;
+}
+
+.input-radio h2 {
+  display: inline-block;
+}
+
+.input-radio input[type="radio"] {
+  width: auto !important;
+  display: inline-block;
+}
+
+footer.footer-linguas {
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+footer.footer-linguas .container {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+footer.footer-linguas a {
+  font-size: 12px;
+  padding-right: 15px;
+  color: #365899;
+  text-decoration: none;
+}
+
+footer.footer-linguas a.selected-lingua {
+  color: #737373;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  form.form-login {
+    float: none;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  form.form-login .form-element {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .form-element input[type="email"],
+  .form-element input[type="password"] {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .form-element input[type="submit"] {
+    margin-top: 10px;
+    width: 140px;
+  }
+
+  .img-cadastro {
+    display: none;
+  }
+
+  .abrir-conta {
+    width: 100%;
+  }
+
+  .abrir-conta input {
+    max-width: 300px;
+  }
+}
